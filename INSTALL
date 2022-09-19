@@ -591,11 +591,11 @@ Alas, there a few issues that we are aware of:
 		  the BLAS_LIBS environment variable to the
 		  appropriate path.
 		- MAC OS X - The BLAS are implemented a little
-		  differently on the MAC.  In particular, they are
+		  differently on the Mac.  In particular, they are
 		  implemented as frameworks and thus not detected as
-		  libraries.  If you want to use the native MAC
+		  libraries.  If you want to use the native Mac
 		  implementation, set the LDFLAGS environment variable
-		  to "-framework vecLib".
+		  to "-framework Accelerate".
 		- SUN compilers (CC/cc) - Depending on which version
 		  of the compilers you have, you may or may not have a
 		  problem.  The macro does not take into account some
@@ -607,7 +607,7 @@ Alas, there a few issues that we are aware of:
 
 	   We will work on correcting these issues.
 
-	2) NPSOL: We had problems linking in NPSOL on the MAC
+	2) NPSOL: We had problems linking in NPSOL on the Mac
 	   platform.  Try explicitly setting your FLIBS environment
 	   variable to "-L/sw/lib -lfrtbegin -lg2c -lm -lgcc".  That
 	   may or may not do the trick.
